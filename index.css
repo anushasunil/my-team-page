@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Poppins:wght@400;600&display=swap');
+
+header {
+    /* background-color: rgb(0, 0, 0); */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* gap: 3vw; */
+}
+
+.main-heading {
+    /* background-color: rgb(161, 18, 18); */
+    /* padding: 0 15vw; */
+    padding: 0 3vw;
+    font-family: 'PT Serif', serif;
+    font-size: 36px;
+    
+}
+.heading-content {
+    /* background-color: rgb(251, 229, 102); */
+    padding: 0 5vw;
+    margin-left: 12vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sub-heading {
+    font-size: 18px;
+}
+
+.heading-paragraph {
+    max-width: 18vw;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 1235px) {
+    .main-heading {
+        min-width: 44vw;
+    }
+    .heading-paragraph {
+        font-size: 14px;
+        min-width: 55vw;
+    }
+}
+
+@media (max-width:580px) {
+    .heading-content {
+        margin-left: 0;  
+
+    }
+
+    .main-heading {
+        min-width: 100vw;
+    }
+
+    .sub-heading {
+        font-size: 18px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .heading-paragraph {
+        margin-top: 0;
+        min-width: 75vw;
+        font-size: 14px;
+    }
+
+    header {
+        justify-content: flex-start;
+    }
+}
