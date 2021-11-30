@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Poppins:wght@400;600&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=PT+Serif&display=swap');
+
+.page-content {
+    display: flex ;
+    flex-direction: column;
+}
+
 header {
     /* background-color: rgb(0, 0, 0); */
     display: flex;
@@ -28,25 +35,167 @@ header {
 }
 
 .heading-paragraph {
-    max-width: 18vw;
+    max-width: 370px;
+    min-width:200px;
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
 }
 
-@media (max-width: 1235px) {
+.team-members {
+    /* background-color: crimson; */
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1260px;
+    margin: 0 auto;
+    justify-content: center;
+    color:black;
+    /* border: 1px solid red; */
+}
+
+.member {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    /* background-color: navajowhite; */
+    width:fit-content;
+    min-height: 450px;
+    padding: 0 3vw;
+    /* border: 1px solid; */
+}
+
+.member-name {
+    margin:0;
+}
+
+.two, .five {
+    justify-content: flex-end;
+    align-self: center;
+}
+
+img {
+    width : 250px;
+}
+
+.name-card {
+    display:flex;
+}
+
+.member-post {
+    /* min-width:5vw; */
+    writing-mode: vertical-rl; 
+    font-family: 'PT Serif', serif;
+    font-size: 12px;
+    font-weight: normal;
+    margin-left: 5px;;
+
+}
+
+.member-name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 15%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #A9A9A9;
+    margin: 0 auto;
+    min-width: 550px;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    color: #A9A9A9;
+    font-weight: bold;
+}
+
+@media (max-width: 2120px) {
     .main-heading {
-        min-width: 44vw;
+        min-width: 24vw;
     }
     .heading-paragraph {
-        font-size: 14px;
-        min-width: 55vw;
+        font-size: 18px;
+        width: 370px;
+    }
+
+}
+
+
+
+@media (max-width:1480px) {
+    .member {
+        min-height: 450px;
+    }
+
+    img {
+        min-width:200px;
     }
 }
+
+@media (max-width: 1160px) {
+    .heading-paragraph {
+        width: 35vw;
+    }
+
+    img {
+        max-width:45vw;
+        min-width:185px;
+    }
+
+    .member {
+        min-height: 500px;
+    }
+
+    .team-members {
+        min-width: 700px;
+    }
+
+}
+
+@media (max-width:960px) {
+    .heading-content {
+        /* margin-left: 0;   */
+        width: 55vw;
+
+    }
+
+    .heading-paragraph {
+        font-size: 18px;
+        min-width: 55vw;
+    }
+
+
+    .team-members {
+        /* margin-left: 5vw; */
+        max-width:700px;
+        /* margin:0 ; */
+    }
+
+    .member {
+        /* min-width: 50v; */
+        min-height: 550px;
+        margin: 0;
+    }
+
+    img {
+        /* max-width:45vw; */
+        min-width:285px;
+    }
+    .five {
+        justify-content: flex-start;
+    }
+    .two, .four, .six {
+        justify-content: flex-end;
+    }
+}
+
 
 @media (max-width:580px) {
     .heading-content {
         margin-left: 0;  
-
     }
 
     .main-heading {
@@ -61,11 +210,38 @@ header {
 
     .heading-paragraph {
         margin-top: 0;
-        min-width: 75vw;
+        min-width: 350px;
         font-size: 14px;
     }
 
     header {
         justify-content: flex-start;
+    }
+    
+    img {
+        min-width:180px;
+    }
+
+    .team-members {
+        margin-left: 20px;
+        min-width: 550px;
+    }
+
+    .member {
+
+        min-height: 420px;
+    }
+}
+
+@media (max-width: 360px) {
+    img {
+        min-width:175px;
+    }
+    .member {
+        min-height: 350px;
+    }
+
+    .team-members {
+        max-width: 300px;
     }
 }
