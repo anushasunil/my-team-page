@@ -45,6 +45,7 @@ header {
     /* background-color: crimson; */
     display: flex;
     flex-flow: row wrap;
+    /* gap:5%; */
     max-width: 1260px;
     margin: 0 auto;
     justify-content: center;
@@ -103,7 +104,7 @@ footer {
     font-size: 16px;
     color: #A9A9A9;
     margin: 0 auto;
-    min-width: 550px;
+    min-width: 650px;
 }
 
 a {
@@ -180,6 +181,7 @@ a {
     .team-members {
         /* margin-left: 5vw; */
         max-width:800px;
+        gap:5%;
         /* margin:0 ; */
     }
 
@@ -222,12 +224,12 @@ a {
     }
     
     img {
-        min-width:180px;
+        min-width:210px;
     }
 
     .team-members {
-        margin-left: 20px;
-        min-width: 550px;
+        /* margin-left: 20px; */
+        min-width: 650px;
     }
 
     .member {
@@ -238,13 +240,14 @@ a {
 
 @media (max-width: 360px) {
     img {
-        min-width:175px;
+        min-width:265px;
     }
     .member {
-        min-height: 350px;
+        /* min-width:200px; */
+        min-height: 500px;
     }
 
     .team-members {
-        max-width: 300px;
+        min-width: 650px;
     }
 }
