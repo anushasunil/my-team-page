@@ -198,13 +198,14 @@ a {
 }
 
 
-@media (max-width:580px) {
+@media (max-width:780px) {
     .heading-content {
         margin-left: 0;  
     }
 
     .main-heading {
-        min-width: 100vw;
+        min-width: 150vw;
+        font-size: 50px;
     }
 
     .sub-heading {
@@ -215,8 +216,8 @@ a {
 
     .heading-paragraph {
         margin-top: 0;
-        min-width: 350px;
-        font-size: 14px;
+        min-width: 400px;
+        font-size: 18px;
     }
 
     header {
