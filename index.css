@@ -155,6 +155,15 @@ a {
 
 }
 
+@media (max-width: 1010px) {
+    .five {
+        justify-content: flex-start;
+    }
+    .two, .four, .six {
+        justify-content: flex-end;
+    }
+}
+
 @media (max-width:960px) {
     .heading-content {
         /* margin-left: 0;   */
@@ -183,12 +192,6 @@ a {
     img {
         /* max-width:45vw; */
         min-width:285px;
-    }
-    .five {
-        justify-content: flex-start;
-    }
-    .two, .four, .six {
-        justify-content: flex-end;
     }
 }
 
