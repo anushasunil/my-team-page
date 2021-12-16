@@ -156,7 +156,7 @@ a {
 
 }
 
-@media (max-width: 1010px) {
+@media (max-width: 1008px) {
     .five {
         justify-content: flex-start;
     }
